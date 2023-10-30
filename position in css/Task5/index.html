@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        #box1 {
+            background-color: red;
+            left: 50px;
+            top: 50px;
+            z-index: 1;
+        }
+
+        #box2 {
+            background-color: blue;
+            left: 75px;
+            top: 75px;
+            z-index: 2;
+        }
+
+        #box3 {
+            background-color: green;
+            left: 100px;
+            top: 100px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+
+
+    <div class="desc" style="margin-top:15rem;">
+        <ul>
+            <li>The <code>z-index</code> property is a CSS property that controls the stacking order of elements in a
+                web page. It specifies the z-axis position of an element in the stacking context, which determines how
+                elements are layered on top of one another in a 2D space on the web page.</li>
+            <li>Elements with a higher <code>z-index</code> value will appear on top of elements with a lower value.
+            </li>
+            <li>The <code>z-index</code> property only works on positioned elements, meaning the element must have a
+                positioning value other than the default "static," such as "relative," "absolute," or "fixed."</li>
+        </ul>
+
+        <p>In this example, we have three colored boxes, each with different <code>z-index</code> values. The CSS
+            properties <code>position: absolute;</code> are applied to make the boxes positioned elements.</p>
+
+        <ul>
+            <li><code>box1</code> has a <code>z-index</code> of 1.</li>
+            <li><code>box2</code> has a <code>z-index</code> of 2.</li>
+            <li><code>box3</code> has a <code>z-index</code> of 3.</li>
+        </ul>
+
+        <p>As a result, <code>box3</code> with a higher <code>z-index</code> value appears on top of <code>box2</code>,
+            and <code>box2</code> appears on top of <code>box1</code>. The stacking order is determined by the
+            <code>z-index</code> values, and it is independent of the order in which the HTML elements appear in the
+            code. If two elements have the same <code>z-index</code>, the one that appears later in the HTML source
+            order will be on top.
+        </p>
+
+    </div>
+</body>
+
+</html>

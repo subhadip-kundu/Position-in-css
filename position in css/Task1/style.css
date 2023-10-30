@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border: 2px solid chocolate;
+    top: 200px;
+    left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border: 1px solid grey;
+    position: absolute;
+    text-align: center;
+}
+
+.box-b {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.box-c {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.box-d {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+
+.box-e {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}

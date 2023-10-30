@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Absolute vs. Relative Positioning</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Difference Between Absolute Positioning and Relative Positioning</h1>
+
+    <ul>
+        <li>
+            <h2>Absolute Positioning:</h2>
+            <p>When an element is positioned using absolute positioning:</p>
+            <ul>
+                <li>The element is taken out of the normal document flow, meaning it does not affect the position of other elements.</li>
+                <li>It is positioned relative to the nearest positioned ancestor (or the initial containing block if there's no positioned ancestor).</li>
+                <li>Using properties like <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>, you can specify exactly where the element should be placed.</li>
+                <li>Commonly used for creating pop-up or overlay elements, such as tooltips or modal dialogs.</li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>Relative Positioning:</h2>
+            <p>When an element is positioned using relative positioning:</p>
+            <ul>
+                <li>The element is still a part of the normal document flow, so it affects the position of other elements around it.</li>
+                <li>It can be moved from its normal position using properties like <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code> but it remains within the document flow.</li>
+                <li>Commonly used for fine-tuning the position of elements or creating responsive layouts.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
